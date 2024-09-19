@@ -5,17 +5,17 @@ import { Text, View } from "react-native"
 import {styles} from "./styles"
 import { InputWithTitle } from "@/src/components/inputWithTitle"
 
-export const LoginScreen = () => {
+export const CadastrarScreen = () => {
     return(
         <View
             style={styles.container}
         >
             <Text style = {styles.title}>
-                LOGIN 
+                Cadastrar 
             </Text> 
             <InputWithTitle/>
             <ButtonCustom
-                titleButton="ESQUECI MINHA SENHA" 
+                titleButton="Cadastrar"  
                 styleContainer={{
                     backgroundColor: colors.WHITE,
                     position: "absolute", 
@@ -25,19 +25,6 @@ export const LoginScreen = () => {
                     color: colors.BLACK 
                 }}
             /> 
-            <ButtonCustom 
-          titleButton="Entrar" 
-          styleContainer={{
-            backgroundColor: "#fff", 
-            width: 200,
-             height: 80 }} 
-          styleText={{color: "#000"}}
-          handleClick={() => router.navigate("/(app)/auth/login")}
-        />
-
         </View>  
     )
 } 
-
-
-            

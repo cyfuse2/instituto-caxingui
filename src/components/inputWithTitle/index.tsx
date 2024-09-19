@@ -11,11 +11,26 @@ export const InputWithTitle = () =>{
             <Text
                 style={styles.title}
             >
-                TESTE
+                E-MAIL 
             </Text>
             <TextInput
-                style={styles.styleInput}
-            />
-        </View>
+                style={styles.styleInput} 
+            /> 
+
+            <Text
+                style={styles.title}
+            >
+                SENHA 
+            </Text>
+            <TextInput
+                style={styles.styleInput} 
+           
+            />   
+        
+            
+
+        </View> 
+        
     )
-}
+
+}   
