@@ -3,36 +3,56 @@ import { colors } from "@/src/utils/colors"
 import { Text, View } from "react-native"
 
 import {styles} from "./styles"
-import { InputWithTitle } from "@/src/components/inputWithTitle"
+import { InputWithTitle } from "@/src/components/inputWithTitle" 
+import { useState } from "react" 
+import { router } from "expo-router"
 
-export const LoginScreen = () => {
+export const LoginScreen = () => { 
+    const [email, setEmail] = useState("") 
+    const [senha, setSenha] = useState ("") 
+
+
     return(
         <View
-            style={styles.container}
+            style={styles.container} 
         >
             <Text style = {styles.title}>
                 LOGIN 
             </Text> 
-            <InputWithTitle/>
+            <InputWithTitle
+                setText={setEmail} 
+                title = "E-mail:" 
+                /> 
+
+                <InputWithTitle
+                setText={setSenha} 
+                title="Senha:" 
+                />
+
             <ButtonCustom
                 titleButton="ESQUECI MINHA SENHA" 
                 styleContainer={{
                     backgroundColor: colors.WHITE,
                     position: "absolute", 
-                    bottom: 450
+                    bottom: 450,
+                    height: 50,
+                    width: 10000, 
                 }}
                 styleText={{
                     color: colors.BLACK 
                 }}
             /> 
             <ButtonCustom 
-          titleButton="Entrar" 
+
+          titleButton="ENTRAR" 
           styleContainer={{
             backgroundColor: "#fff", 
-            width: 200,
-             height: 80 }} 
+            position: "absolute", 
+            bottom: 550,
+            width: 10000,
+             height: 50 }} 
           styleText={{color: "#000"}}
-          handleClick={() => router.navigate("/(app)/auth/login")}
+          handleClick={() => router.navigate("/(app)/home/home")} 
         />
 
         </View>  

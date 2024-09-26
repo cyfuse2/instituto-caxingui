@@ -9,11 +9,12 @@ export const styles = StyleSheet.create({
         flex: 1,
         height: "100%",
         justifyContent: "flex-start",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: colors.PRIMARY 
     },
     title: {
         fontSize: 32,
         fontWeight: "bold",
-        color: colors.PRIMARY
+        color: colors.WHITE 
     }
 })

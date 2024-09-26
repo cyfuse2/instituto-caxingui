@@ -1,4 +1,5 @@
 import { LoginScreen } from "@/src/screens/auth/login";
+import { colors } from "@/src/utils/colors";
 import { Stack } from "expo-router";
 
 
@@ -11,7 +12,7 @@ export default function Login () {
                     headerTitle: "Entrar",
                     headerTintColor: "#FFF",
                     headerStyle: {
-                        backgroundColor: "#ffc42d"
+                        backgroundColor: colors.PRIMARY 
                     },
                     headerTitleAlign: "center"
                 }}
