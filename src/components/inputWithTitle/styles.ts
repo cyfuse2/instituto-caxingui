@@ -8,23 +8,25 @@ export const styles = StyleSheet.create({
         width:"100%",
         flexDirection:"column",
         justifyContent: "center",
-        alignItems: "flex-start"
+        alignItems: "flex-start", 
+        
     },
     title: {
-        color: colors.BLACK,
+        color: colors.WHITE, 
         textAlign: "left",
         fontSize: 12,
         fontWeight: "bold",
         marginBottom: 8
     },
-    styleInput:{
+    styleInput:{ 
+        backgroundColor: colors.WHITE,
         height: 53,
         width: "100%",
         justifyContent: "center",
         alignItems: "center",
         borderRadius: 8,
         borderWidth:1,
-        borderColor: colors.PRIMARY,
+        borderColor: colors.WHITE,
         paddingLeft: 15
     }
 })
